@@ -1,4 +1,4 @@
-FROM balser/buildbox
+FROM balser/go-buildbox:1.6
 RUN  curl -sL https://rpm.nodesource.com/setup_6.x | bash -
 RUN  yum install -y sudo nodejs && yum clean -y all
 RUN  sed -ie 's/Defaults\s\+requiretty//g' /etc/sudoers
